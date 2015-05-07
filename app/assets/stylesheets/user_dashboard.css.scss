@@ -1,0 +1,210 @@
+// Place all the styles related to the user_dashboard controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html{
+    height: 101%;
+    width: 101%;
+    margin:0;
+    padding:0;
+}
+
+body{
+    //border: dotted;
+    margin:0;
+    padding:0;
+     height: 100%;
+     width: 100%;
+     margin-top: 0;
+     margin-left: 0;
+     margin-right: 0;
+     margin-bottom: 0;
+
+}
+#root {
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+
+
+
+.vertica_layout{
+    //border: dotted;
+    height: 100%;
+}
+.vertical_layout_elem{
+   height: 100%;   
+}
+#dashboard_header{
+    
+    height: 10%;   
+}
+#dashboard_content{
+    
+    height: 90%;   
+}
+
+#header{
+    //border: 1px solid silver;
+    height: 100%;  
+    background-color: #464646; 
+}
+
+#content{
+    //border: 1px solid black;
+    height: 100%;   
+}
+
+.horizontal_layout{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display-inline:block;
+}
+
+
+.horizontal_layout_elem{
+    display: inline-block;
+      overflow: hidden;
+       height: 100%;
+       float: left;
+
+}
+
+/* CSS FOR MAP */
+
+
+#map_content{
+    //border: 1px solid black;
+    width: 70%; 
+    background-color: #E8E8E8      
+}
+
+
+#map{
+    height: 95%; 
+    width: 95%;  
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid silver;
+    //background-color: #E8E8E8 ;
+    background-color: #fff ;
+    border-radius: 25px;
+    background: url(/assets/map.gif); 
+    overflow: scroll;
+}
+
+/* CSS FORM HEADER */
+
+#title{
+    
+    width: 30%;  
+}
+
+#menu{
+    
+    width: 69%;  
+}
+
+#title_name{
+    height: 100%;
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+#title_name span{
+   
+    font: 30px"Dosis", sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    left: 30px;
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    color: #9ca5af;
+    letter-spacing: 10px
+}
+ 
+ #iner_menu .menu_item{
+    //  width: 30%;
+    //border: 2px solid white;
+    display: table;
+    vertical-align: middle;
+    text-align: center;
+ }
+
+#iner_menu .menu_item span{
+    font: 15px"Dosis", sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    left: 30px;
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    color: #9ca5af;
+    letter-spacing: 10px
+}
+#iner_menu .menu_item span a{
+    text-decoration: none;
+    color: #9ca5af;
+}
+#iner_menu #menu_devices{
+  width: 40%;
+}
+#iner_menu #menu_other{
+  width: 40%;
+}
+#iner_menu #menu_logout{
+  width: 19%;
+  
+}
+#iner_menu #menu_devices span a:hover{
+        color: #fff;
+        //background-image: linear-gradient(to bottom, #1b87e3 2%, #166ed5 98%); 
+}
+
+
+/* CSS FORM PANEL */
+#panel_content{
+    height: 100%;
+    width: 29%;  
+    background-color:   #464646; //E8E8E8      ;
+    //  border-radius: 25px;
+
+}
+
+
+.panel_item{
+    width: 100%;
+    height: 30%;
+}
+.iner_panel_item{
+    width: 100%;
+
+}
+.iner_panel_item {
+    width: 100%;
+    
+}
+
+.iner_panel_item .header{
+    width: 100%;
+    height: 20%;
+    background-image: linear-gradient(to bottom, #1b87e3 2%, #166ed5 98%); 
+    
+}
+ //color: #9ca5af; // gris letras
+ //color: #464646;  // gris oscuro fondo header
+
+ //background-image: linear-gradient(to bottom, #1b87e3 2%, #166ed5 98%); azul

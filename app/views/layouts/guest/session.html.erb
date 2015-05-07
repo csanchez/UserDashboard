@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login in to Tracker</title>
+	<%= stylesheet_link_tag    'guest_session', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	<header class="cd-header">
+		<div id="cd-logo">
+			<a href="#0">
+				<!-- <%= image_tag('cd-logo.svg') %>  -->
+				<span> Tracker </span> 
+				<!-- Conoces alguien que nos necesite? -->
+				
+			</a>
+
+		</div>
+
+		<nav class="cd-main-nav">
+			<ul>
+				<!-- inser more links here -->
+				<li><a href="/welcome">Inicio</a></li>
+				<li><a href="#0">Contacto</a></li>
+			</ul>
+		</nav> <!-- cd-main-nav -->
+	</header>
+	<main class="cd-main-content">
+		<div class="cd-fixed-bg cd-bg-1">
+			<!-- <div class="numberCircle">1</div>
+			<span class="step_description"> Proporciona tus dadtos</span>-->
+			<h1>Crear una cuenta Tracker</h1>
+			<%= yield %>
+		</div> <!-- cd-fixed-bg -->
+	</main>
+</body>
+</html>

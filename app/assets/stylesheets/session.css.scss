@@ -1,0 +1,153 @@
+
+.cd-fixed-bg h1, .cd-fixed-bg h2 {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  text-align: center;
+  font-size: 30px;
+  font-size: 4rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.cd-fixed-bg h1{
+  font-weight: bold;
+    font-size: 3em;
+    font-family: "jaf-facitweb","Helvetica Neue",Arial,sans-serif;
+}
+
+
+#login_box{
+     //border: 2px solid white;
+    width: 100%;
+    height: 50%;
+    
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    
+    display: inline-block;
+    font-size: 0.875rem;
+    //margin-top: 20px;
+    padding: 1em 1.4em;
+     margin: 0 auto;
+}
+
+#login_inner_box{
+// border: 2px solid white;
+  width: 40%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#login_inner_box form .input_box{
+// border: 2px solid white;
+  width: 100%;
+  color: white;
+   display: block;
+    font-size: 25px;
+    font-family: "jaf-facitweb","Helvetica Neue",Arial,sans-serif;
+    text-align:left;
+    //margin: 0 auto;
+    //padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+#login_inner_box form .input_box .label{
+// border: 2px solid white;
+  width: 30%;
+ display:inline-block;
+
+}
+
+#login_inner_box form .input_box .input{
+// border: 2px solid white;
+  width: 65%;
+ display:inline-block;
+
+}
+
+
+
+
+#login_inner_box form .input_box  input{
+ background: none repeat scroll 0 0 #edeff0;
+  border: 1px solid #cdd2d4;
+    border-radius: 4px;
+    box-sizing: border-box;
+    //max-width: 300px;
+    padding: 1em;
+    width: 100%;
+}
+
+#login_inner_box form .button_box{
+//border: 2px solid white;
+width: 100%;
+
+color: white;
+display: absolute;
+font-size: 25px;
+font-family: "jaf-facitweb","Helvetica Neue",Arial,sans-serif;
+
+padding-top: 10px;
+}
+
+
+.btn-minimal{
+ 
+ cursor: pointer;
+  background: linear-gradient(to bottom, #70b500 0px, #64a200 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 0 #3b5e01;
+  color: #fff;
+  border: 0 none;
+  border-radius: 0.3em;
+  width: 100px;
+  height: 40px;  
+  font-weight: bold;
+ // padding: 0.6em 1.3em;
+  font-size: 20px;
+  font-family: "jaf-facitweb","Helvetica Neue",Arial,sans-serif;
+  
+}
+
+
+ 
+.button_box .btn-minimal{
+ width: 30%;
+  
+  float:left;
+  float:top;
+  margin-left: 31%;
+}
+
+
+
+.numberCircle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    background: none repeat scroll 0 0 #edeff0;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    border: 1px solid silver;
+    color: #666;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+
+

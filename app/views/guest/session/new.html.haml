@@ -1,0 +1,15 @@
+#login_box
+  #login_inner_box
+    = form_tag guest_session_create_path do
+      .input_box
+        .label
+          = label_tag(:login)
+        .input
+          = text_field_tag :login, nil, placeholder: 'Nombre de usuario', required: "required"
+      .input_box
+        .label
+          = label_tag(:contraseña)
+        .input
+          = password_field_tag :password, nil, placeholder: 'Contraseña', required: "required"
+      .button_box
+        = submit_tag "Entrar", class: "btn-minimal" 

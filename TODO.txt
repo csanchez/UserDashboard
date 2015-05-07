@@ -1,0 +1,13 @@
+
+
+1.- Cambiar id e imagen de fondo para incio de sesion de usuarios
+
+2.- Cambiar forma de login de email por nombre u otro
+
+3.- How it works o TUTORIAl en el registro como invitado
+
+
+
+
+
+

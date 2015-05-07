@@ -1,0 +1,20 @@
+.vertical_layout_elem{id: 'dashboard_header'}
+  #header
+    .horizontal_layout
+      .horizontal_layout_elem{id: 'title'}
+        .vertica_layout
+          #title_name
+            %span Tracker
+      .horizontal_layout_elem{id: 'menu'}
+        .vertica_layout
+          .vertical_layout_elem
+            .horizontal_layout{id: 'iner_menu'}
+              .horizontal_layout_elem{id: 'menu_devices', class: 'menu_item'}
+                %span 
+                  = link_to "Devices"  
+              .horizontal_layout_elem{id: 'menu_other', class: 'menu_item'}
+                %span
+              .horizontal_layout_elem{id: 'menu_logout', class: 'menu_item'}
+                %span Salir
+          
+          
