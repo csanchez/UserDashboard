@@ -2,7 +2,8 @@
 # The default is nothing which will include only core features (password encryption, login/logout).
 # Available submodules are: :user_activation, :http_basic_auth, :remember_me,
 # :reset_password, :session_timeout, :brute_force_protection, :activity_logging, :external
-Rails.application.config.sorcery.submodules = [:http_basic_auth, :external, :remember_me, :reset_password, :activity_logging, :brute_force_protection, :user_activation, :session_timeout]
+Rails.application.config.sorcery.submodules = [:http_basic_auth]
+#, :external, :remember_me, :reset_password, :activity_logging, :brute_force_protection, :user_activation, :session_timeout
 
 # Here you can configure each submodule's features.
 Rails.application.config.sorcery.configure do |config|
@@ -281,7 +282,7 @@ Rails.application.config.sorcery.configure do |config|
     # your mailer class. Required.
     # Default: `nil`
     #
-     user.user_activation_mailer = UserMailer
+     #user.user_activation_mailer = UserMailer
 
 
     # when true sorcery will not automatically
@@ -301,7 +302,7 @@ Rails.application.config.sorcery.configure do |config|
     # activation success email method on your mailer class.
     # Default: `:activation_success_email`
     #
-     user.activation_success_email_method_name = nil
+     #user.activation_success_email_method_name = nil
 
 
     # do you want to prevent or allow users that did not activate by email to login?

@@ -1,0 +1,77 @@
+<div class="cd-fixed-bg cd-bg-1">
+			
+
+			<div class='content'>
+				<h1>Como funciona?</h1>
+				<div class='how-it-works'>
+					<p>Para comenzar a utilizar tracker crea una cuenta e inicia sesión</p>
+					<p>Una vez en Tracker, el asistente te guiara a través de 3 sensillos pasos</p>
+					<p>
+						<ul>
+							<li>
+								<div >1 Descar la app Tracker Device</div>
+							</li>
+							<li>
+								<div >2 Descar la app Tracker o incia sesión desde tu explorador</div>
+							</li>
+							<li>
+								<div >3 Comienza a utilizar tracker</div>
+							</li>
+						</ul>
+					</p>
+					<a id="headerbuy" class="buybutton1 green-btn" href="#cuenta">Comenzar</a>
+				</div>
+				
+			</div>
+
+		</div> 
+		<div class="cd-fixed-bg cd-bg-2">
+			<div class='content'>
+				<h2>Crear cuenta</h2>
+				<a name="cuenta"></a>
+				<div id='registro'>
+					<%= form_for @user, url: {action: "create"}, html: {class: "nifty_form"}  do |f| %>
+  						<% if @user.errors.any? %>
+    						<div id="error_explanation">
+						      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+						      <ul>
+						      <% @user.errors.full_messages.each do |message| %>
+						        <li><%= message %></li>
+						      <% end %>
+						      </ul>
+						    </div>
+						<% end %>
+						<div id='fields'>
+							<div class="field">
+							    <%= f.label 'Nombre de Usuario' %>
+							    <%= f.text_field :login %>
+							</div>
+							<div class="field">
+							    <%= f.label :Email %>
+							    <%= f.text_field :email %>
+							</div>
+							<div class="field">
+							    <%= f.label 'Contraseña' %>
+							    <%= f.password_field :password %>
+							</div>
+							<div class="field">
+							    <%= f.label 'Confirmar contraseña' %>
+							    <%= f.password_field :password_confirmation %>
+							</div>
+						</div>
+						<div id='button'>
+							<div class="actions">
+							    <%= f.submit 'Crear cuenta'%>
+
+							</div>
+						</div>
+					<% end %>
+
+
+
+				</div>
+				
+				
+			</div>
+
+		</div> 

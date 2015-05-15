@@ -1,0 +1,23 @@
+.cd_header{
+    position: fixed;
+}
+
+
+
+.content{
+	border: 1px solid black;
+    background-color: red;
+    position: absolute;
+    bottom: auto;
+    color: white;
+    left: 50%;
+    top: 60%;
+    right: auto;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    height: 60%;
+
+}

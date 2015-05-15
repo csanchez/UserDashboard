@@ -1,34 +1,43 @@
 Rails.application.routes.draw do
 
   get "welcome" => "welcome#index" 
+  root "welcome#index"
 
-  #namespace :admin do
-  #  get 'dashboard/dashboard'  
-  #end
+  
   
   scope 'user',  module: 'user', as: 'user' do
 
-
-    get 'dashboard' => 'dashboard#dashboard', :as => :dashboard
-    get  'login'    => 'session#new', :as => :login
-    post 'logout'   => 'session#destroy', :as => :logout
-    #resources :session
-    post 'session/create' => 'session#create'
+    resources :dashboard , only: [:show]
+  #  get 'dashboard' => 'dashboard#dashboard', :as => :dashboard
+    
+   
+  #  post 'session/create' => 'session#create'
   end
 
+
+  #resources 'users'
+
+  #get 'new',     to: 'users#new'
+
+  post 'create',     to: 'users#create',:as => :create_users
+
+  get 'registro'     => 'users#new',:as => :new_users
+
+  get  'login'    => 'session#new', :as => :login
+  post 'logout'   => 'session#destroy', :as => :logout
+  post 'session/create' => 'session#create'
+
   scope 'guest', module: 'guest', as: 'guest' do
-
-
-    get 'show'    => 'guests#show'
-    get 'create'  => 'guests#create'
-    get 'new'     => 'guests#new'
-
-
-    get 'dashboard/dashboard'
-    get  'login'    => 'session#new', :as => :login
-    post 'logout'   => 'session#destroy', :as => :logout
-    #resources :session
-    post 'session/create' => 'session#create'
+  #  get 'show'    => 'guests#show'
+  #  post 'create'  => 'guests#create'
+  #  get 'registro'     => 'guests#new',:as => :new
+  #
+  #
+    #get 'dashboard' => 'dashboard#dashboard' , :as => :dashboard, param: :slug
+    resources :dashboard , only: [:show]
+  #  get  'login'    => 'session#new', :as => :login
+  #  post 'logout'   => 'session#destroy', :as => :logout
+  #  post 'session/create' => 'session#create'
   end
   
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150506044544) do
+ActiveRecord::Schema.define(version: 20150510222016) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,12 @@ ActiveRecord::Schema.define(version: 20150506044544) do
     t.string   "activation_state"
     t.string   "activation_token"
     t.datetime "activation_token_expires_at"
+    t.string   "login"
+    t.string   "name"
+    t.string   "lastname"
+    t.string   "phone_number"
+    t.string   "cell_number"
+    t.boolean  "is_guest"
   end
 
   add_index "users", ["activation_token"], name: "index_users_on_activation_token", using: :btree
